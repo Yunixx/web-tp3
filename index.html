@@ -3,13 +3,12 @@
 <head>
 	<meta charset="utf-8" />
 	<title>Gestion de contenu</title>
-	<link rel="stylesheet" href="styles.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/styles.css" type="text/css" media="screen" />
   <link rel="stylesheet" href="css/movingbox.css" type="text/css" media="screen">
 	<script src="js/jquery-1.3.1.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/slider.js" type="text/javascript" charset="utf-8"></script>
 	<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js?ver=1.3.2'></script>
   <script type='text/javascript' src='js/jquery.color-RGBa-patch.js'></script>
-  <script type='text/javascript' src='js/example.js'></script>
     <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
 <body>
@@ -17,10 +16,23 @@
 	<header><!-- header -->
 		<br><br><br>
     <h1>Mon blog</h1>
+    
+    <!-- Div de connexion -->
+    <div id="connectDiv">
+    	<h2>Connexion</h2>
+    	
+    	<form action="#" method="post">
+		<label>Pseudo : </label><br /><input type="text" id="username" name="username" /><br />
+		<label>Mot de passe :</label><br /><input type="password" id="password" name="password" />
+		<input type="checkbox" id="remember" name="remember" /><span id="rememberLabel">Se souvenir de moi</span>
+		<input type="submit" id="submitBout" value="Se connecter" />
+    	</form>
+		
+		<img src="images/bottom.png" id="bottomImage" alt="bottom" />
+    </div>
 </header><!-- end of header -->
 
-<div class="nav-wrap">
-		
+<div class="nav-wrap">	
 		<ul class="group" id="example-one">
             <li class="current_page_item"><a href="#one">Accueil</a></li>
             <li><a href="#two">Qui sommes-nous</a></li>
@@ -137,5 +149,7 @@
 </footer>
 	
 </div><!-- #wrapper -->
+<script src="js/connexion.js"></script>
+<script type='text/javascript' src='js/example.js'></script>
 </body>
 </html>

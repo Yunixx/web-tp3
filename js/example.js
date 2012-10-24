@@ -32,7 +32,7 @@ $(function(){
             width: $magicLine.data("origWidth")
         });    
     });
-    
+
     
     /*
         EXAMPLE TWO
@@ -50,6 +50,7 @@ $(function(){
         .data("origColor", $(".current_page_item_two a").attr("rel"));
                 
     $("#example-two li").find("a").hover(function() {
+    	alert('ss');
         $el = $(this);
         leftPos = $el.position().left;
         newWidth = $el.parent().width();
