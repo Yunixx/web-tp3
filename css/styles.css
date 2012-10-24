@@ -25,7 +25,7 @@ margin-top: 0px;
 #wrapper {
 width: 940px;
 margin: 0 auto;
-margin-top: 10px;
+margin-top: 0px;
 margin-bottom: 20px;
 }
 
@@ -90,6 +90,7 @@ color: #eee;
 }
 
 header h1 { 	
+margin-top: 0px;
 font-size: 36px;
 font-variant:  small-caps;
 }
@@ -249,6 +250,7 @@ color: #ddd;
 	right: 0px;
 	height: 150px;
 	width: 170px;
+	z-index: 1;
 }
 
 #remember {

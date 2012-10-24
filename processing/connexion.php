@@ -27,7 +27,7 @@ if(isset($_POST['username']) AND isset($_POST['password']) AND $_POST['username'
 		// se souvenir de l'utilisateur
 		if($_POST['remember'])	
 		{
-			setcookie('cmsrl_remember', $data['id'], (time() + 3600), '/');
+			setcookie('cmsrl_remember', $data['id'], (time() + 10368000, '/');
 		}
 		echo true;
 	}
