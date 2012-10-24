@@ -2,7 +2,7 @@
 	
 	var etat = "up";
 	
-	//Monter la box de connexion
+	//Animation box de connexion
 	$('#bottomImage').click(function() {
 		if(etat == 'up')
 		{
@@ -28,6 +28,9 @@
 		if(etat == "up")
 			$('#connectDiv').animate({top:-150}, 100);
 	});
+	
+	//Ajax connexion
+	$('')
 	
 });
 
