@@ -5,14 +5,16 @@ require('param_bd.inc');
 
 if(isset($_POST['username']) AND isset($_POST['password']) AND $_POST['username'] != null AND $_POST['password'] != null)
 {
-	$bd = new pdo('mysql:host='.$dbHote.';dbname='.$dbName, $dbUser, $dbPass);
+	//$bd = new pdo('mysql:host='.$dbHote.';dbname='.$dbName, $dbUser, $dbPass);
+	$bd = new pdo('mysql:host=localhost;dbname=cmsrl' ,'root', 'toor');
+	echo "test";
 
-	$req = $bd->prepare("SELECT * FROM usagers WHERE login = :login AND enc_password = :passdw");
+	$req = $bd->prepare("SELECT * FROM usagers WHERE login = :username AND enc_password = :password");
 
 	$req->execute(
 		array(
-			'login' => $_POST['username'],
-			'passwd' => sha1($_POST['password'])
+			'username' => $_POST['username'],
+			'password' => sha1($_POST['password'])
 		));
 
 	$data = $req->fetchAll();

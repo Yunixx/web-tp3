@@ -3,7 +3,7 @@ session_start();
 require('../param_bd.inc');
 if(isset($_SESSION['username']) AND isset($_SESSION['acces']))
 {
-	if($_SESSION['acces'] == 1)
+	if($_SESSION['acces'] == "admin")
 	{
 		$db = new pdo('mysql:host='.$dbHote.'dbname='.$dbName, $dbUser, $dbPass);
 
