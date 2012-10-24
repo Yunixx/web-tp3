@@ -30,7 +30,15 @@
 	});
 	
 	//Ajax connexion
-	$('')
+	$('submitBout').click(function() {
+		
+		var $username = $('#username').val(),
+			$password = $('#password').val();
+			
+			$.post('processing/connexion.php', {'username': $username, 'password': $password }, function(answer) {
+			alert(answer);		
+		});
+	});
 	
 });
 
