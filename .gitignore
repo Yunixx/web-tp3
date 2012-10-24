@@ -1,3 +1,5 @@
 test.php
 *.swp
 *~
+.DS_Store/*
+.DS_Store
