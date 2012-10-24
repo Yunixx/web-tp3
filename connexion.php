@@ -25,7 +25,7 @@ if(isset($_POST['username']) AND isset($_POST['password']) AND $_POST['username'
 		$_SESSION['acces'] = $data['acces'];
 		// Si cocher, créer un cookie pour
 		// se souvenir de l'utilisateur
-			
+		if($_POST['remember'])	
 		{
 			setcookie('cmsrl_remember', $data['id'], (time() + 3600), '/');
 		}
