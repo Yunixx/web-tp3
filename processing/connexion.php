@@ -1,11 +1,11 @@
 <?php
 session_start();
 
-require('param_bd.inc');
 
 if(isset($_POST['username']) AND isset($_POST['password']) AND $_POST['username'] != NULL AND $_POST['password'] != NULL)
 {
-	$bd = new pdo('mysql:host='.$dbHote.';dbname='.$dbName, $dbUser, $dbPass);
+
+	require('../lib/connect_bd.inc');
 
 	$req = $bd->prepare("SELECT * FROM usagers WHERE login = :username AND enc_password = :password");
 
