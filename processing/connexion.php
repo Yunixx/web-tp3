@@ -32,6 +32,11 @@ if(isset($_POST['username']) AND isset($_POST['password']) AND $_POST['username'
 		$req->closeCursor();
 		echo true;
 	}
+	
+	else
+	{
+		echo "Nom d'utilisateur ou mot de passe invalide.";
+	}
 }
 
 else
