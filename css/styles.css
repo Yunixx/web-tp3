@@ -282,3 +282,9 @@ color: #ddd;
 #rememberLabel {
 	margin-left: -105px;
 }
+
+#error {
+	color: red;
+	text-align: center;
+	display: none;
+}

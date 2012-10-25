@@ -21,6 +21,10 @@
     <div id="connectDiv">
     	<h2>Connexion</h2>
     	
+    	<div id="error">
+    	Message d'erreur
+    	</div>
+    	
     	<?php
     	//Script pour détection de l'utilisateur mis en mémoire
     	
