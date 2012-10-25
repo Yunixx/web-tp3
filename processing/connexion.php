@@ -41,7 +41,7 @@ if(isset($_POST['username']) AND isset($_POST['password']) AND $_POST['username'
 
 else
 {
-	echo "Nom d'utilisateur ou mot de passe invalide.";
+	echo "Veuillez entrez un nom d'utilisateur valide";
 }
 
 
