@@ -30,7 +30,7 @@
 	});
 	
 	//Ajax connexion
-	$('#submitBout').click(function() {
+	$('#submitBout').click(function(event) {
 		
 		var $username = $('#username').val(),
 			$password = $('#password').val(),

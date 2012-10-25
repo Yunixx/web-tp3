@@ -29,6 +29,7 @@ if(isset($_POST['username']) AND isset($_POST['password']) AND $_POST['username'
 		{
 			setcookie('cmsrl_remember', $data[0]['id'], (time() + 3600), '/');
 		}
+		$req->closeCursor();
 		echo true;
 	}
 }
