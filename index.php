@@ -30,7 +30,6 @@
     	
     	$check = '';
     	$username = '';
-	    $pass = '';
     	
     	if(isset($_COOKIE['cmsrl_remember']))
     	{
@@ -38,13 +37,12 @@
 	    	
 	    	require('lib/connect_bd.inc');
 	    	
-	    	$req = $bd->prepare('SELECT login, enc_password FROM usagers WHERE id=:id');
+	    	$req = $bd->prepare('SELECT login FROM usagers WHERE id=:id');
 	    	$req->execute(array('id' => $id));
 	    	
 	    	$data = $req->fetchAll();
 	    	
 	    	$username = $data[0]['login'];
-	    	$pass = $data[0]['enc_password'];
 	    	
 	    	$req->closeCursor();
 	    	
