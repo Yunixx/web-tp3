@@ -5,8 +5,7 @@ require('param_bd.inc');
 
 if(isset($_POST['username']) AND isset($_POST['password']) AND $_POST['username'] != NULL AND $_POST['password'] != NULL)
 {
-	//$bd = new pdo('mysql:host='.$dbHote.';dbname='.$dbName, $dbUser, $dbPass);
-	$bd = new pdo('mysql:host=localhost;dbname=cmsrl' ,'root', 'root');
+	$bd = new pdo('mysql:host='.$dbHote.';dbname='.$dbName, $dbUser, $dbPass);
 
 	$req = $bd->prepare("SELECT * FROM usagers WHERE login = :username AND enc_password = :password");
 
@@ -30,6 +29,7 @@ if(isset($_POST['username']) AND isset($_POST['password']) AND $_POST['username'
 		{
 			setcookie('cmsrl_remember', $data[0]['id'], (time() + 3600), '/');
 		}
+		$req->closeCursor();
 		echo true;
 	}
 	
