@@ -30,12 +30,15 @@
 	});
 	
 	//Ajax connexion
-	$('submitBout').click(function() {
+	$('#submitBout').click(function() {
 		
 		var $username = $('#username').val(),
-			$password = $('#password').val();
+			$password = $('#password').val(),
+			$remember = $('input[name=remember]').is(':checked');
 			
-			$.post('processing/connexion.php', {'username': $username, 'password': $password }, function(answer) {
+			
+			
+			$.post('processing/connexion.php', {'username': $username, 'password': $password, 'remember': $remember }, function(answer) {
 			alert(answer);		
 		});
 	});
