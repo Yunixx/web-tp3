@@ -21,11 +21,38 @@
     <div id="connectDiv">
     	<h2>Connexion</h2>
     	
+    	<?php
+    	//Script pour détection de l'utilisateur mis en mémoire
+    	
+    	$check = '';
+    	$username = '';
+	    $pass = '';
+    	
+    	if(isset($_COOKIE['cmsrl_remember']))
+    	{
+    		$id = $_COOKIE['cmsrl_remember'];
+	    	
+	    	require('lib/connect_bd.inc');
+	    	
+	    	$req = $bd->prepare('SELECT login, enc_password FROM usagers WHERE id=:id');
+	    	$req->execute(array('id' => $id));
+	    	
+	    	$data = $req->fetchAll();
+	    	
+	    	$username = $data[0]['login'];
+	    	$pass = $data[0]['enc_password'];
+	    	
+	    	$req->closeCursor();
+	    	
+	    	$check = 'checked';
+    	}
+    	?>
+    
     	<div id="connectForm">
     	<form action="#" method="post">
-		<label>Pseudo : </label><br /><input type="text" id="username" name="username" /><br />
-		<label>Mot de passe :</label><br /><input type="password" id="password" name="password" />
-		<input type="checkbox" id="remember" value="Remember" name="remember" /><span id="rememberLabel">Se souvenir de moi</span>
+		<label>Pseudo : </label><br /><input type="text" id="username" name="username" value='<?php echo $username; ?>' /><br />
+		<label>Mot de passe :</label><br /><input type="password" id="password" name="password" value='<?php echo $pass; ?>'/>
+		<input type="checkbox" id="remember" value="Remember" name="remember" checked="<?php echo $check; ?>" /><span id="rememberLabel">Se souvenir de moi</span>
 		<input type="button" id="submitBout" value="Se connecter" />
     	</form>
     	</div>
