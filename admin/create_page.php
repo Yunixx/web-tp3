@@ -1,11 +1,10 @@
 <?php
 session_start();
-require('../param_bd.inc');
 if(isset($_SESSION['username']) AND isset($_SESSION['acces']))
 {
 	if($_SESSION['acces'] == "admin")
 	{
-		$db = new pdo('mysql:host='.$dbHote.'dbname='.$dbName, $dbUser, $dbPass);
+		require('../lib/connect_db.inc');
 
 		if(isset($_POST['titre']) AND isset($_POST['content']) AND isset($_POST['user_id']) AND isset($_POST['sujet_id']))
 		{
