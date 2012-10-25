@@ -7,8 +7,9 @@
   <link rel="stylesheet" href="css/movingbox.css" type="text/css" media="screen">
 	<script src="js/jquery-1.3.1.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/slider.js" type="text/javascript" charset="utf-8"></script>
-	<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js?ver=1.3.2'></script>
-  <script type='text/javascript' src='js/jquery.color-RGBa-patch.js'></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/ui/1.9.0/jquery-ui.js"></script>
+	<script type='text/javascript' src='js/jquery.color-RGBa-patch.js'></script>
     <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
 <body>
