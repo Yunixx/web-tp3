@@ -1,4 +1,9 @@
 <?php
+/**
+ * @Author : Justin Lavoie et Jonathan Roy
+ * @File : connexion.php
+ * @Description : Script permettant de connecter un utilisateur
+ **/
 session_start();
 
 
