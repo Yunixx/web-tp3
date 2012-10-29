@@ -9,10 +9,6 @@ session_start();
 
 if(isset($_POST['username']) AND isset($_POST['password']) AND $_POST['username'] != NULL AND $_POST['password'] != NULL)
 {
-<<<<<<< HEAD
-
-=======
->>>>>>> Connect
 	require('../lib/connect_bd.inc');
 
 	$req = $bd->prepare("SELECT * FROM usagers WHERE login = :username AND enc_password = :password");
@@ -49,7 +45,7 @@ if(isset($_POST['username']) AND isset($_POST['password']) AND $_POST['username'
 
 else
 {
-	echo "Veuillez entrez un nom d'utilisateur valide";
+	echo "Veuillez entrez des informations valides";
 }
 
 

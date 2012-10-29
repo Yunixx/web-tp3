@@ -48,8 +48,19 @@
 				heightBox = $('#connectDiv').height();
 			}
 			else
-			{
-				$('#connectForm').fadeOut();
+			{			
+						$('#connectForm').fadeOut(function() {
+						
+							$('#connectForm').load('admin/menu_admin.php', 
+							function() {
+							
+								heightDiv = $('#connectForm').height();
+							
+								$('#connectForm').fadeIn();
+							
+						});
+					});
+					$('#error').fadeOut(); 
 			}
 			
 		});
