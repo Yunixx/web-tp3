@@ -8,15 +8,16 @@
 	<title>Gestion de contenu</title>
 	<link rel="stylesheet" href="css/styles.css" type="text/css" media="screen" />
   <link rel="stylesheet" href="css/movingbox.css" type="text/css" media="screen">
-	<script src="js/jquery-1.3.1.min.js" type="text/javascript" charset="utf-8"></script>
-	<script src="js/slider.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.js"></script>
 	<script type="text/javascript" src="http://code.jquery.com/ui/1.9.0/jquery-ui.js"></script>
 	<script type='text/javascript' src='js/jquery.color-RGBa-patch.js'></script>
+	<script type='text/javascript' src='admin/create_form.js'></script>
     <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
 <body>
 <div id="wrapper"><!-- #wrapper -->
+	<div id="bg"></div>
+	<div id="create"></div>
 	<header><!-- header -->
 		<br><br><br>
     <h1>Mon blog</h1>
