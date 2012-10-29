@@ -1,5 +1,4 @@
-﻿
-/* reset */
+﻿/* reset */
 * {
 margin: 0;
 padding: 0;
@@ -292,7 +291,6 @@ color: #ddd;
 	display: none;
 }
 
-<<<<<<< HEAD
 /** CREATE FORM **/
 #load-div{
 	border: 1px solid black;
@@ -314,7 +312,7 @@ color: #ddd;
 	bottom: 0;
 	z-index: 999;
 }
-=======
+
 #bottomImage {
 	bottom: 0px;
 }
@@ -349,4 +347,3 @@ color: #ddd;
 #lienDeco:hover {
 	text-decoration: underline;
 }
->>>>>>> 3a166b5d6008f0617d71afe70e06d16502bdec9a
