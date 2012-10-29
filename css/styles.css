@@ -257,6 +257,9 @@ color: #ddd;
 	margin-left: 0px;
 }
 
+#connectDiv {
+}
+
 #connectDiv input {
 	width: 125px;
 	margin-bottom: 8px;
@@ -289,6 +292,7 @@ color: #ddd;
 	display: none;
 }
 
+<<<<<<< HEAD
 /** CREATE FORM **/
 #load-div{
 	border: 1px solid black;
@@ -310,3 +314,39 @@ color: #ddd;
 	bottom: 0;
 	z-index: 999;
 }
+=======
+#bottomImage {
+	bottom: 0px;
+}
+
+#connectDiv h4 {
+	color:#e6b374;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+#connectDiv ul {
+	margin-top: - 10px;
+	list-style: none;
+}
+
+#lienDeco {
+	color:#e6b374;
+	float: right;
+	margin-top: 10px;
+}
+
+#connectDiv a {
+	color: #666;
+	font-style: none;
+}
+
+#lienDeco {
+	margin-right: 5px;
+	margin-bottom: 5px;
+}
+
+#lienDeco:hover {
+	text-decoration: underline;
+}
+>>>>>>> 3a166b5d6008f0617d71afe70e06d16502bdec9a

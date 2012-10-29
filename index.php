@@ -1,3 +1,6 @@
+<?php
+	session_start();
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -20,7 +23,6 @@
     
     <!-- Div de connexion -->
     <div id="connectDiv">
-    	<h2>Connexion</h2>
     	
     	<div id="error">
     	Message d'erreur
@@ -52,6 +54,7 @@
     	?>
     
     	<div id="connectForm">
+    	<h2>Connexion</h2>
     	<form action="#" method="post">
 		<label>Pseudo : </label><br /><input type="text" id="username" name="username" value='<?php echo $username; ?>' /><br />
 		<label>Mot de passe :</label><br /><input type="password" id="password" name="password" value='<?php echo $pass; ?>'/>
