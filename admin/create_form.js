@@ -10,5 +10,6 @@ $(document).ready(function(){
 		$('#bg').fadeIn();
 		$('#load-div').load('create.html');
 		$('#load-div').dialog({draggable: false});
+		$('#load-div').dialog({minWidth: 350});
 	});
 });
