@@ -4,4 +4,10 @@
  * @Description : Formulaire de création de page utilisant jquery ui
  **/
 
+$(document).ready(function(){
 
+	$('#load').click(function(){
+		$('#load-div').load('create.html');
+		$('#load-div').dialog({draggable: false});
+	});
+});
