@@ -291,28 +291,6 @@ color: #ddd;
 	display: none;
 }
 
-/** CREATE FORM **/
-#load-div{
-	border: 1px solid black;
-}
-
-#load-div{ 
-	display: none;
-	border: 3px solid black;
-	padding: 3px;
-}
-
-#bg{
-	display:none;
-	background-color: rgba(100, 100, 100, 0.7);
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	z-index: 999;
-}
-
 #bottomImage {
 	bottom: 0px;
 }
@@ -347,3 +325,36 @@ color: #ddd;
 #lienDeco:hover {
 	text-decoration: underline;
 }
+
+
+/**
+ * CREATE FORM
+ **/
+
+.form_title{
+	color: black;
+	font-weight: bold;
+	text-align:center;
+	font-size: 22px;
+}
+
+#create_form label{
+	margin-left: 10px;
+	font-size : 18px;
+}
+
+#create_form input[type="text"]{
+	margin: 10px;
+	min-height: 30px;
+	min-width: 350px;
+	border-radius: 10px;
+}
+
+#create_form textarea{
+	margin-right: 75px;
+	border-radius: 10px;
+	height: 250px;
+	width: 850px;
+	display: block;
+}
+
