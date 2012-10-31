@@ -1,4 +1,15 @@
-<h4>Bienvenue <?php echo $_SESSION['login']; ?>!</h4>
+<h4>Bienvenue <?php 
+
+if(isset($_SESSION['id']))
+	echo $_SESSION['login'];
+
+else
+{
+	?>
+	<span id="nameUser"></span>	
+<?php
+}	
+ ?>!</h4>
     		
     		<ul>
     		<a href="#"><li>- <span id="addArticle">Ajouter un article</span></li></a>
