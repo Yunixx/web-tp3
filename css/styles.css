@@ -257,6 +257,7 @@ color: #ddd;
 }
 
 #connectDiv {
+	top:0;
 }
 
 #connectDiv input {
@@ -326,6 +327,9 @@ color: #ddd;
 	text-decoration: underline;
 }
 
+.dontDisplay {
+	display: none;
+}
 
 /**
  * CREATE FORM
