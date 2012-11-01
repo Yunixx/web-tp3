@@ -1,6 +1,6 @@
  $(document).ready(function() {
 	
-	var etat = "up",
+	var etat = "down",
 	    heightBox = $('#connectDiv').height();
 	
 	//Animation box de connexion
@@ -60,6 +60,7 @@
 
 								$('#connectForm').fadeIn();
 								$('#nameUser').html($username);
+								$('#example-one').load('admin/upmenu.php');
 						});
 					});
 					$('#error').fadeOut(); 
@@ -81,6 +82,7 @@
 						$('#connectForm').fadeIn();
 						$('.dontDisplay').fadeIn();
 						$('#bottomImage').fadeIn();
+						$('#example-one').load('admin/upmenu.php');
 					});	
 				});
 			});

@@ -11,7 +11,6 @@
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.js"></script>
 	<script type="text/javascript" src="http://code.jquery.com/ui/1.9.0/jquery-ui.js"></script>
 	<script type='text/javascript' src='js/jquery.color-RGBa-patch.js'></script>
-	<script type='text/javascript' src='admin/create_form.js'></script>
     <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
 <body>
@@ -77,12 +76,32 @@
     </div>
 </header><!-- end of header -->
 
+
+<?php
+	
+	if(isset($_SESSION['acces']))
+	{
+		$req = $bd->prepare('SELECT id, menu_titre FROM articles WHERE acces=:acces');
+		$req->execute(array('acces' => $_SESSION['acces']));
+		
+		$data = $req->fetchAll();
+	}
+?>
+
 <div class="nav-wrap">	
 		<ul class="group" id="example-one">
             <li class="current_page_item"><a href="#one">Accueil</a></li>
-            <li><a href="#two">Qui sommes-nous</a></li>
-            <li><a href="#three">Nos créations</a></li>
-            <li><a href="#">Nous rejoindre</a></li>
+            <?php
+	 			
+	 			if(isset($_SESSION['acces']))
+	 			{           
+		            foreach ($data as $rep)
+		            {
+			            echo "<li class='current_page_item'><a href='#one'>" . $rep['menu_titre'] . "</a></li>";
+		            }
+	            }
+	            
+            ?>
         </ul>
 </div>
 
