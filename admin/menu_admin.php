@@ -12,10 +12,9 @@ else
  ?>!</h4>
     		
     		<ul>
-    		<a href="#"><li>- <span id="addArticle">Ajouter un article</span></li></a>
-    			<a href="#"><li>- <span id="editArticle">Gestions des articles</span></li></a>
     			<a href="#"><li>- <span id="addPage">Ajouter une page</span></li></a>
     			<a href="#"><li>- <span id="editPage">Éditer une page</span></li></a>
+    			<a href="#"><li>- <span id="delPage">Supprimer des articles</span></li></a>
     			<a href="#"><li>- <span id="addUser">Ajouter un utilisateur</span></li></a>
     			<a href="#"><li>- <span id="editUser">Gestion des utilisateurs</span></li></a>
     		</ul>

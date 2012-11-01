@@ -51,6 +51,8 @@
 	    	
 	    	$check = 'checked';
     	}
+		
+		}
     	?>
     
     	<div id="connectForm">

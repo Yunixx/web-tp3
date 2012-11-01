@@ -1,7 +1,17 @@
-<form method="post" action"processing/delete_page.php">
-	<?php
-		/**
-		 * Mettre la dropdown liste de tous les articles que L,utilisateur connecté à créés.
-		 **/
-		?>
+<form method="post" action"admin/processing/delete_page.php">
+<label for="pages_list">Articles à supprimer</label>
+<?php
+	require('../lib/db_connect.inc');
+
+	$req = $bd->prepare("SELECT titre FROM articles");
+	$req->execute();
+	$data = $req->fetchAll();
+	echo '<select>';
+	foreach($data as $row)
+	{
+		echo '<option'.echo $row.'</option>';
+	}
+	echo '</select>';
+?>
+<input type="submit" value="Supprimer" />
 </form>
