@@ -78,25 +78,12 @@
 </header><!-- end of header -->
 
 
-<?php
 
-	$req = $bd->prepare('SELECT id, titre_Menu FROM articles');
-	$req->execute();
-	
-	$data = $req->fetchAll();
-?>
 
 <div class="nav-wrap">	
 		<ul class="group" id="example-one">
             <li class="current_page_item"><a href="#one">Accueil</a></li>
-            <?php
-	            
-	            foreach ($data as $rep)
-	            {
-		            echo "<li class='current_page_item'><a href='#one'>" . $rep['titre_Menu'] . "</a></li>";
-	            }
-	            
-            ?>
+          
         </ul>
 </div>
 
