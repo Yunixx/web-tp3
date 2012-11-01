@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Oct 31, 2012 at 07:14 PM
+-- Generation Time: Oct 24, 2012 at 04:51 PM
 -- Server version: 5.5.28-log
 -- PHP Version: 5.4.8
 
@@ -31,11 +31,21 @@ USE `cmsrl`;
 CREATE TABLE IF NOT EXISTS `articles` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `titre` varchar(70) NOT NULL,
-  `date` datetime NOT NULL,
   `content` mediumtext NOT NULL,
   `user_id` int(11) NOT NULL,
-  `menu_titre` varchar(70) NOT NULL,
-  `acces` varchar(20) NOT NULL,
+  `sujet_id` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `sujets`
+--
+
+CREATE TABLE IF NOT EXISTS `sujets` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `sujet` varchar(60) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 

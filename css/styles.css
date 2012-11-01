@@ -1,3 +1,4 @@
+﻿
 /* reset */
 * {
 margin: 0;
@@ -256,9 +257,6 @@ color: #ddd;
 	margin-left: 0px;
 }
 
-#connectDiv {
-}
-
 #connectDiv input {
 	width: 125px;
 	margin-bottom: 8px;
@@ -295,14 +293,18 @@ color: #ddd;
 	bottom: 0px;
 }
 
+#connectDiv {
+	top:-151px;
+}
+
 #connectDiv h4 {
 	color:#e6b374;
 	margin-top: 5px;
-	margin-bottom: 5px;
+	margin-bottom: 15px;
 }
 
 #connectDiv ul {
-	margin-top: - 10px;
+	margin-top: -10px;
 	list-style: none;
 }
 
@@ -319,42 +321,13 @@ color: #ddd;
 
 #lienDeco {
 	margin-right: 5px;
-	margin-bottom: 5px;
+	margin-bottom: 10px;
 }
 
 #lienDeco:hover {
 	text-decoration: underline;
 }
 
-
-/**
- * CREATE FORM
- **/
-
-.form_title{
-	color: black;
-	font-weight: bold;
-	text-align:center;
-	font-size: 22px;
+.dontDisplay {
+	display: none;
 }
-
-#create_form label{
-	margin-left: 10px;
-	font-size : 18px;
-}
-
-#create_form input[type="text"]{
-	margin: 10px;
-	min-height: 30px;
-	min-width: 350px;
-	border-radius: 10px;
-}
-
-#create_form textarea{
-	margin-right: 75px;
-	border-radius: 10px;
-	height: 250px;
-	width: 850px;
-	display: block;
-}
-
