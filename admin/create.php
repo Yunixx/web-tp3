@@ -14,7 +14,7 @@ require('../lib/header.inc');
 			<textarea id="content" name="content" placeholder="Contenu de votre article"></textarea><br/>
 			<label for="username">Nom d'utilisteur: </label><br/>
 			<?php 
-				if($_SESSION['admin'] == "admin")
+				/*if($_SESSION['acces'] == "admin")
 				{
 					// mettre le checkbox pour réduire l'acces et la drop down list avec seulement les admins
 					$req = $bd->prepare("SELECT login FROM usagers WHERE acces = admin");
@@ -39,7 +39,7 @@ require('../lib/header.inc');
 						echo '<option>'.$row.'</option>';
 					}
 					echo '</select>';
-				}
+				}*/
 			?>
 			<input type="submit" value="Créer la page" />
 		</form>
