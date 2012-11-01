@@ -214,6 +214,6 @@
 	
 </div><!-- #wrapper -->
 <script src="js/connexion.js"></script>
-<script type='text/javascript' src='js/example.js'></script>
+<script type='text/javascript' src='js/adminTrait.js'></script>
 </body>
 </html>

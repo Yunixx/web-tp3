@@ -362,3 +362,35 @@ color: #ddd;
 	display: block;
 }
 
+#main {
+	padding-left: 15px;
+	padding-top: 5px;
+}
+
+h1 {
+	margin-bottom: 10px;
+}
+
+#username {
+	width: 200px;
+}
+
+#pass {
+	width: 150px;
+}
+
+#submitCreateUser {
+	width: 100px;
+	margin-bottom: 10px;
+}
+
+.contour {
+	border: 1px solid black;
+}
+
+#errorForm {
+	color: red;
+	font-size: 16px;
+	margin-bottom: 10px;
+	display: none;
+}
