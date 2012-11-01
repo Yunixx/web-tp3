@@ -8,7 +8,13 @@ $(document).ready(function() {
 		 });
 	 });
 	 
-	 //Fonction ajax 
-
+	 //Fonction ajax ajouter utilisateur
+	 $(document.body).delegate('#submitCreateUser', 'click', function() {
+	 
+	 	$.post('processing/connexion.php', {'username': $username, 'password': $password, 'remember': $remember }, function(answer) {
+	 	
+	 
+	 
+	 });
 });
 

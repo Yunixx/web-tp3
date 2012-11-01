@@ -16,7 +16,8 @@ if(isset($_SESSION['id']) AND isset($_POST['username']) AND $_POST['username'] !
 			$req->execute(array('login' => $_POST['username'],
 								 'pass' => sha1($_POST['password']),
 								 'acces' => $_POST['typeUser']);
-			
+								 
+			echo "1";
 			
 		}
 		else
