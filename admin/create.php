@@ -1,6 +1,6 @@
 <p class="form_title">Créer une nouvelle page</p>
 	<div id="create_form" title="Create a new page">
-		<form method="post" action="processing/create_page.php" />
+		<form method="post" action="admin/processing/create_page.php" />
 			<label for="titre">Titre: <label><br/>
 			<input type="text" id="titre" name="titre" placeholder="Titre" /><br/>
 			<label for="menu_titre">Menu Titre:</label><br/>
