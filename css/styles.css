@@ -257,6 +257,9 @@ color: #ddd;
 	margin-left: 0px;
 }
 
+#connectDiv {
+}
+
 #connectDiv input {
 	width: 125px;
 	margin-bottom: 8px;
@@ -293,18 +296,14 @@ color: #ddd;
 	bottom: 0px;
 }
 
-#connectDiv {
-	top:-151px;
-}
-
 #connectDiv h4 {
 	color:#e6b374;
 	margin-top: 5px;
-	margin-bottom: 15px;
+	margin-bottom: 5px;
 }
 
 #connectDiv ul {
-	margin-top: -10px;
+	margin-top: - 10px;
 	list-style: none;
 }
 
@@ -321,13 +320,9 @@ color: #ddd;
 
 #lienDeco {
 	margin-right: 5px;
-	margin-bottom: 10px;
+	margin-bottom: 5px;
 }
 
 #lienDeco:hover {
 	text-decoration: underline;
-}
-
-.dontDisplay {
-	display: none;
 }

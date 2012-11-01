@@ -8,33 +8,30 @@
 		if(etat == 'up')
 		{
 			$('#connectDiv').animate({top:0}, 1000);
-			etat = "down";	
-			
+			etat = "down";
 		}
 		else
 		{
-			$('#connectDiv').animate({top:(heightBox * -1)}, 1000, function() {
-				etat = "up";
-			});
+			$('#connectDiv').animate({top:(heightBox * -1)}, 1000);
+			etat = "up";
 		}
 	});
 	
 	//Petit bum lorsque la fenêtre est haute
-	$('#bottomImage').mouseenter(function() {
+	$('#bottomImage').hover(function() {
 		if(etat == "up")
-			$('#connectDiv').animate({top:'+=5'}, 100);
+			$('#connectDiv').animate({top:(heightBox * -1 + 5)}, 100);
 			
 	});
 	
 	//Petit bum lorsque la fenêtre est haute
 	$('#bottomImage').mouseleave(function() {
 		if(etat == "up")
-			$('#connectDiv').animate({top:'-=5'}, 100);
-			
+			$('#connectDiv').animate({top:(heightBox * -1)}, 100);
 	});
 	
 	//Ajax connexion
-	$(document.body).delegate('#submitBout', 'click', function() {
+	$('#submitBout').click(function(event) {
 		
 		var $username = $('#username').val(),
 			$password = $('#password').val(),
@@ -52,38 +49,21 @@
 			}
 			else
 			{			
-						$('#bottomImage').fadeOut();
 						$('#connectForm').fadeOut(function() {
 						
 							$('#connectForm').load('admin/menu_admin.php', 
 							function() {
-
+							
+								heightDiv = $('#connectForm').height();
+							
 								$('#connectForm').fadeIn();
-								$('#nameUser').html($username);
+							
 						});
 					});
 					$('#error').fadeOut(); 
 			}
 			
 		});
-	});
-	
-	//Ajax déconnexion
-	$(document.body).delegate('#lienDeco', 'click', function () {
-			
-			event.preventDefault();
-			
-			$.post('processing/deconnexion.php', {}, function() {
-				
-				$('#connectForm').fadeOut('fast', function() {
-					
-					$('#connectForm').load('admin/connexion_input.php', function() {
-						$('#connectForm').fadeIn();
-						$('.dontDisplay').fadeIn();
-						$('#bottomImage').fadeIn();
-					});	
-				});
-			});
 	});
 	
 	//Fait apparaitre l'erreur lors de la connexion
