@@ -12,7 +12,10 @@ if(isset($_SESSION['id']) AND isset($_POST['username']) AND $_POST['username'] !
 			
 			require('../lib/connect_db.inc');
 			
-			$req = $bd->prepare('INSERT login, enc_password, acces INTO usagers');
+			$req = $bd->prepare('INSERT INTO usagers (login, enc_password, acces) VALUES(:login, :pass, :acces)');
+			$req->execute(array('login' => $_POST['username'],
+								 'pass' => sha1($_POST['password']),
+								 'acces' => $_POST['typeUser']);
 			
 			
 		}
