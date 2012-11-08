@@ -4,7 +4,7 @@ if(isset($_POST['title']) AND $_SESSION['acces'] == "admiN")
 {
 	try
 	{
-		require('../../lib/connect_bd.inc');
+		require('../lib/connect_bd.inc');
 
 		$req = $bd->prepare("DELETE FROM articles WHERE titre = :letitre");
 		$req->execute(
