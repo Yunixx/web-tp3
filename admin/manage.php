@@ -1,10 +1,16 @@
 <form method="pôst" action="processing/manage_page.php">
 	<?php
-		/**
-		 * Mettre une dropdown liste avec les articles 
-		 * et changer le contenu du form à l'aide de ajax
-		 * dépendant la page choisie
-		 **/
+		require('../lib/connect_bd.inc');
+		$req = $bd->prepare("SELECT titre FROM articles");
+		$req->execute();
+		$data = $req->fetchAll();
+
+		echo '<select id="title" name="title">';
+		foreach($data as $row)
+		{
+			echo '<option>'.$row.'</option>';
+		}
+		echo '</select>';
 	?>
 
 	<label for="titre">Titre</label><br/>
