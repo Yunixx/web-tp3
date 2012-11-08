@@ -8,7 +8,7 @@
 	?>
 
 	<label for="titre">Titre</label><br/>
-	<input type="text" id="titre" name="titre" placeholder="titre" /><br/>
+	<input type="text" id="titre" name="titre" placeholder="Titre" /><br/>
 	<label for="content">Contenu</label><br/>
 	<textarea id="content" name="content" placeholder="Contenu de votre page"></textarea><br/>
 	<!-- datepicker jquery ui -->

@@ -17,6 +17,7 @@ if(isset($_SESSION['username']) AND isset($_SESSION['acces']))
 					'user_id' => $_POST['user_id'],
 					'sujet_id' => $_POST['sujet_id']
 				));
+			echo true;
 		}
 	}
 	else
