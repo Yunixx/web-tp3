@@ -388,9 +388,46 @@ h1 {
 	border: 1px solid black;
 }
 
+/***Form admin***/
+
 #errorForm {
 	color: red;
-	font-size: 16px;
-	margin-bottom: 10px;
+	font-size: 14px;
+	margin-bottom: 7px;
+	margin-top: -5px;
 	display: none;
+}
+
+#errorForm img {
+	margin-bottom: -3px;
+	height: 17px;
+	width: 17px;
+}
+
+#confirmForm {
+	display: none;
+	color:#09b423;
+	font-size: 14px;
+	margin-bottom: 7px;
+	margin-top: -5px;
+}
+
+#confirmForm img {
+	margin-bottom: -3px;
+	height: 17px;
+	width: 17px;
+}
+
+select {
+	width: 150px;
+}
+
+#editUserSub {
+	width: 75px;
+}
+
+#eraseUserSub {
+	width: 75px;
+	margin-left: 5px;
+	margin-bottom: 10px;
 }
