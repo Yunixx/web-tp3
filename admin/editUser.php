@@ -2,7 +2,7 @@
 <div id="errorForm"></div>
 <div id="confirmForm"></div>
 <label>Utilisateurs : </label>
-<select name="userGest">
+<select name="userGest" id="userGest">
 <?php
 
 	require('../lib/connect_bd.inc');
@@ -23,3 +23,5 @@
 </select><br /><br />
 <button id="editUserSub">Modifier</button>
 <button id="eraseUserSub">Effacer</button>
+
+<div id="modifUser"></div>

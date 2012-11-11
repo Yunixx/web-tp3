@@ -83,6 +83,11 @@
 						$('.dontDisplay').fadeIn();
 						$('#bottomImage').fadeIn();
 						$('#example-one').load('admin/upmenu.php');
+					});
+					
+				    $('#main').fadeOut('fast', function() {
+						$('#main').load('pages/accueil.php');
+						$('#main').fadeIn();
 					});	
 				});
 			});

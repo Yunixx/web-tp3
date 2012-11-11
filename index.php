@@ -106,69 +106,8 @@
 </div>
 
 <section id="main"><!-- #main content area -->
-	  <p>&nbsp;</p>
-		<p><br></p>
-	  <div id="slider">    
-     <img class="scrollButtons left" src="images/leftarrow.png">
-  	  <div style="overflow: hidden;" class="scroll">
-	
-				<div class="scrollContainer">
-	
-          <div class="panel" id="panel_1">
-						<div class="inside">
-							<img src="images/p1.jpg" alt="picture" />
-							<h2>Nouvelle créations</h2>
-							<p>Nous vous présentons	... <a href="#">lire la suite</a></p>
-						</div>
-					</div>
-
-          <div class="panel" id="panel_2">
-						<div class="inside">
-							<img src="images/p2.jpg" alt="picture" />
-							<h2>News Heading</h2>
-							<p>A very short excerpt goes here... <a href="#">more link</a></p>
-						</div>
-					</div>
-				
-          <div class="panel" id="panel_3">
-						<div class="inside">
-							<img src="images/p3.jpg" alt="picture" />
-							<h2>News Heading</h2>
-							<p>A very short excerpt goes here... <a href="#">more link</a></p>
-						</div>
-					</div>
-					
-					<div class="panel" id="panel_4">
-						<div class="inside">
-							<img src="images/p4.jpg" alt="picture" />
-							<h2>News Heading</h2>
-							<p>A very short excerpt goes here... <a href="#">more link</a></p>
-						</div>
-					</div>
-					
-					<div class="panel" id="panel_5">
-						<div class="inside">
-							<img src="images/p5.jpg" alt="picture" />
-							<h2>News Heading</h2>
-							<p>A very short excerpt goes here... <a href="#">more link</a></p>
-						</div>
-					</div>
-				
-         </div>
-
-				<div id="left-shadow"></div>
-				<div id="right-shadow"></div>
-
-       </div>
-
-			<img class="scrollButtons right" src="images/rightarrow.png">
-
-     </div>
-        
-<article>
-  <p>&nbsp;</p>
-  <p>Eu eirmod interesset temporibus eum, sea cu amet reque quaestio. Qui erroribus assentior disputando an, quo quot accumsan menandri te, accumsan aliquando dissentias mei ea. Autem verear molestiae an mel, nominavi expetenda similique sit ei. Commodo utroque scribentur id nam, an ferri eruditi perpetua his, et has esse facer nominavi. Mei et essent dictas aliquip. Saepe eligendi phaedrum ne vix, sit putant eruditi eloquentiam at. Eu eirmod interesset temporibus eum, sea cu amet reque quaestio. Qui erroribus assentior disputando an, quo quot accumsan menandri te, accumsan aliquando dissentias mei ea. Autem verear molestiae an mel, nominavi expetenda similique sit ei. Commodo utroque scribentur id nam, an ferri eruditi perpetua his, et has esse facer nominavi. Mei et essent dictas aliquip. Saepe eligendi phaedrum ne vix, sit putant eruditi eloquentiam at. </p>
-</article>
+	  
+	  <?php require('pages/accueil.php'); ?>
 
 </section><!-- end of #content -->
 
