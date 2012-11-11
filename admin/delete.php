@@ -6,12 +6,14 @@
 	$req = $bd->prepare("SELECT titre FROM articles");
 	$req->execute();
 	$data = $req->fetchAll();
-	echo '<select>';
+	echo '<select name="title">';
 	foreach($data as $row)
 	{
 		echo '<option'.echo $row.'</option>';
 	}
 	echo '</select>';
+
+	$req->closeCursor();
 ?>
 <input type="submit" value="Supprimer" />
 </form>

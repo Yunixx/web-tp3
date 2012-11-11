@@ -5,6 +5,7 @@
 tinyMCE.init({
 	mode : "textareas",
 	theme : "advanced"
+	//theme_advanced_buttons2 : "insertimage"
 });
 </script>
 		<form method="post" action="admin/processing/create_page.php" />
